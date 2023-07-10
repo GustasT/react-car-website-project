@@ -16,6 +16,7 @@ import { DarkTheme, LightTheme } from "./global-styles/Themes.jsx";
 // import { Container } from "./components/tier1/Container/Container.jsx";
 import { Navbar } from "./layouts/Navbar/Navbar.jsx";
 import { FooterBottom } from "./layouts/Footer/FooterBottom.jsx";
+import { Footer } from "./layouts/Footer/Footer.jsx";
 
 const StyledApp = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -50,7 +51,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
 
-        <FooterBottom />
+        <Footer />
         <button onClick={toggleTheme}>ChangeTheme</button>
       </StyledApp>
     </ThemeProvider>

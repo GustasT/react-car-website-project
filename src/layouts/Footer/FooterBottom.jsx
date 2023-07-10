@@ -1,17 +1,18 @@
 import React from "react";
 import { Container } from "../../components/tier1/Container/Container";
-import {
-  StyledWebsiteLogo,
-  WebsiteLogo,
-} from "../../components/tier1/WebsiteLogo/WebsiteLogo";
+import { StyledWebsiteLogo } from "../../components/tier1/WebsiteLogo/WebsiteLogo";
 import { FooterNavigation } from "../../components/tier2/FooterNavigation/FooterNavigation";
 import { styled } from "styled-components";
 
-const StyledFooterBottom = styled.div`
+const StyledFooterBottom = styled.footer`
   display: flex;
   height: 90px;
   align-items: center;
   justify-content: space-between;
+
+  .copyright {
+    opacity: 60%;
+  }
 `;
 
 const FooterLogo = styled(StyledWebsiteLogo)`
@@ -25,7 +26,7 @@ export const FooterBottom = () => {
         <StyledFooterBottom>
           <FooterLogo>&#123;finsweet</FooterLogo>
           <FooterNavigation />
-          <p>@Copyright Finsweet 2021</p>
+          <p className="copyright">@Copyright Finsweet 2021</p>
         </StyledFooterBottom>
       </Container>
     </div>
