@@ -9,7 +9,7 @@ const StyledStyledContainer = styled(StyledContainer)`
 
   h3 {
     font-size: 36px;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
 `;
 
