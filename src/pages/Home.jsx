@@ -5,6 +5,7 @@ import { Experience } from "../components/tier2/experience/Experience";
 import { FAQAccordion } from "../components/tier3/faq/FAQ";
 import { Testimonials } from "../components/tier3/testimonials/Testimonials";
 import { Brands } from "../components/tier3/brands/Brands";
+import { Offer } from "../components/tier3/offer/Offer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       </Container>
       <CTA />
       <Experience />
+      <Offer />
       <Brands />
       <Testimonials />
       <FAQAccordion />

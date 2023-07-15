@@ -10,6 +10,9 @@ import { Container } from "../../tier1/Container/Container";
 const BrandsComponentContainer = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
+
+  background-color: ${(props) =>
+    props.theme.name === "Light" ? props.theme.body : "black"};
   h3 {
     font-size: 36px;
     text-align: center;
@@ -24,6 +27,10 @@ const BrandsContainer = styled.div`
   align-items: center;
   gap: 20px;
   justify-content: center;
+
+  img {
+    opacity: 80%;
+  }
 `;
 
 export const Brands = () => {
